@@ -9,11 +9,11 @@ const addNewBear = (e) => {
     const brandNewBear =
         {
             id: `bear${bears.length + 1}`,
-            name: document.getElementById('bear-name').value,
-            imageUrl: document.getElementById('bear-photo').value
+            name: $('#bear-name').val(),
+            imageUrl: $('#bear-photo').val()
         }
     bearData.getBears().push(brandNewBear);
-    document.getElementById('new-bear-form').reset();
+    $('#new-bear-form').trigger('reset');
     river.buildABear();
 };
 
@@ -31,7 +31,7 @@ const buildBearForm = () => {
     domString += '<button type="submit" class="btn btn-primary" id="submit-new-bear">Submit</button>';
     domString += '</form>';
     util.printToDom('bear-form', domString);
-    document.getElementById('submit-new-bear').addEventListener('click', addNewBear);
+    $('#submit-new-bear').click(addNewBear);
 };
 
 export default { buildBearForm };
