@@ -1,5 +1,6 @@
 import util from '../helpers/utils.js'
 import bearData from '../helpers/data/bearData.js'
+import river from '../components/river.js'
 
 
 const addNewBear = (e) => {
@@ -13,7 +14,7 @@ const addNewBear = (e) => {
         }
     bearData.getBears().push(brandNewBear);
     document.getElementById('new-bear-form').reset();
-    console.log(brandNewBear);
+    river.buildABear();
 };
 
 const buildBearForm = () => {
