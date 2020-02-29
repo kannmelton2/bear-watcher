@@ -18,7 +18,7 @@ const addNewBear = (e) => {
 };
 
 const buildBearForm = () => {
-    let domString = '';
+    let domString = '<h2>Add New Bear</h2>';
     domString += '<form id="new-bear-form">';
     domString += '<div class="form-group">';
     domString += '<label for="bearName">Bear\'s Name</label>';
