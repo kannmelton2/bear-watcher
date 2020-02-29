@@ -1,3 +1,7 @@
 body {
-    background-color: lightgoldenrodyellow;
+    background-image: url(https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2022&q=80);
+}
+
+.bear-cards {
+    height: 100%;
 }
